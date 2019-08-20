@@ -1,2 +1,3 @@
-// Primeiro site em js
-window.alert('Seja bem-vindo!')
+//Site em js
+var x = confirm("Press a button!");
+
