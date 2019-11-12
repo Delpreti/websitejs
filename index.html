@@ -3,23 +3,56 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Template</title>
+		<title>Calculadora de CO2</title>
 		<link rel="stylesheet" href="style.css" title="external style sheet">
-
-		<img src="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/11/61/7c/11617c86-a9a2-035f-760d-7b2142d8caa5/logo_gsa_ios_color-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/246x0w.jpg" alt=Logo height="42" width="42" draggable="false">
-		Blank Template
-		<button type="button" id="botaologin">Fazer login</button>
-		<button type="button" id="botaocadastro">Cadastre-se</button>
+		
+		<div class="container">
+			<img src="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/11/61/7c/11617c86-a9a2-035f-760d-7b2142d8caa5/logo_gsa_ios_color-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/246x0w.jpg" alt=Logo height="42" width="42" draggable="false">
+			<h1>Calculadora de CO2</h1>
+		
+			<div class="login">
+				<button type="button" id="botaologin" onclick="enableLogin()">Fazer login</button>
+				<button type="button" id="botaocadastro">Cadastre-se</button>
+			</div>
+		</div>
 	</head>
 
 	<body>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">click here to learn more</a>
+		<p>Esta ferramenta calcula as emissões em toneladas de CO2</p>
+		<a href="https://www.w3schools.com/jsref/dom_obj_event.asp">link util</a>
+		<form name="loginForm" id="formLogin" onsubmit="validateForm()" method="post" hidden=true>
+			Usuário: <input type="text" name="fname"><br>
+			Senha: <input type="password" name="fpass"><br>
+			<input type="submit" value="Submit" onclick="confirmForm()">
+		</form>
+		<form name="dadosCalculadora" id="principal" onsubmit="sendCO()">
+			<div class="tableView">
+				<div class="categoria" name="eletro">
+					<p>Eletrodomésticos</p>
+					<img src="http://www.semagro.ms.gov.br/wp-content/uploads/2016/12/seta-vermelha-300x300.png"
+					height="50" width="50" onclick="togglediv(1)">
+				</div>
+				<div id="Domesticos" hidden=true>
+						<p>Ar-condicionado</p>
+						<p>Chuveiro Elétrico</p>
+						<p>Geladeira</p>
+						<p>Microondas</p>
+				</div>
+				<div class="categoria" name="residuo">
+						<p>Descarte de resíduos</p>
+						<img src="" onclick="togglediv(2)">
+				</div>
+				<div class="categoria" name="veiculo">
+					<p>Veículos</p>
+					<img src="" onclick="togglediv(3)">
+				</div>
+			</div>
+		</form>
 		<script src="pagina0.js"></script>
 	</body>
 
 	<footer>
-		<p>fale conosco: 
+		<p class="faleConosco">fale conosco: 
 			<a href="mailto:link@link.com">
 				link template
 			</a>

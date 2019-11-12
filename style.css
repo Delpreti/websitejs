@@ -1,5 +1,37 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	
+	justify-content: space-between;
+  	align-items: center;
+
+}
+
+.tableView {
+	display: flex;
+	flex-direction: column;
+	background-color: darkolivegreen;
+}
+
+.categoria {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+header{
+	font: bold 20pt Arial;
+}
+
 body {
-	background-color: rgb(255, 255, 200);
+	background-color: rgb(169, 235, 143);
 	color: black;
 	font: normal 15pt Arial;
+}
+
+.faleConosco{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
 }
