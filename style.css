@@ -5,6 +5,21 @@
 	justify-content: space-between;
   	align-items: center;
 
+	background-color: greenyellow;
+	fill-opacity: 50%;
+}
+
+.butao {
+	border-radius: 8px;
+	height: 50px;
+	width: 150px;
+	background-color: green;
+	color: white;
+	border: 0px;
+}
+
+.description {
+	text-align: center;
 }
 
 .tableView {
@@ -24,14 +39,20 @@ header{
 }
 
 body {
-	background-color: rgb(169, 235, 143);
+	background-image: url(imagem_fundo_01.jpeg);
+	background-size: 100%;
+	background-repeat: no-repeat;
 	color: black;
 	font: normal 15pt Arial;
 }
 
-.faleConosco{
+.faleConosco {
 	display: flex;
 	flex-direction: row;
 	align-content: center;
 	align-items: center;
+}
+
+.freepik {
+	text-align: end;
 }

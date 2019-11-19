@@ -7,43 +7,42 @@
 		<link rel="stylesheet" href="style.css" title="external style sheet">
 		
 		<div class="container">
-			<img src="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/11/61/7c/11617c86-a9a2-035f-760d-7b2142d8caa5/logo_gsa_ios_color-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/246x0w.jpg" alt=Logo height="42" width="42" draggable="false">
-			<h1>Calculadora de CO2</h1>
+			<h1>&nbsp Calculadora de CO2</h1>
 		
 			<div class="login">
-				<button type="button" id="botaologin" onclick="enableLogin()">Fazer login</button>
-				<button type="button" id="botaocadastro">Cadastre-se</button>
+				<button class="butao" type="button" id="botaologin" onmouseover="recolor()" onclick="enableLogin()">Fazer login</button>
+				<button class="butao" type="button" id="botaocadastro" onmouseover="recolor()">Cadastre-se</button>
+				&nbsp;
 			</div>
 		</div>
 	</head>
 
 	<body>
-		<p>Esta ferramenta calcula as emissões em toneladas de CO2</p>
+		<p class="description">Esta ferramenta calcula as emissões em toneladas de CO2</p>
 		<a href="https://www.w3schools.com/jsref/dom_obj_event.asp">link util</a>
 		<form name="loginForm" id="formLogin" onsubmit="validateForm()" method="post" hidden=true>
-			Usuário: <input type="text" name="fname"><br>
-			Senha: <input type="password" name="fpass"><br>
+			<input type="text" name="fname" placeholder="usuário"><br>
+			<input type="password" name="fpass" placeholder="senha"><br>
 			<input type="submit" value="Submit" onclick="confirmForm()">
 		</form>
 		<form name="dadosCalculadora" id="principal" onsubmit="sendCO()">
 			<div class="tableView">
 				<div class="categoria" name="eletro">
-					<p>Eletrodomésticos</p>
-					<img src="http://www.semagro.ms.gov.br/wp-content/uploads/2016/12/seta-vermelha-300x300.png"
-					height="50" width="50" onclick="togglediv(1)">
+					<p>&nbsp Eletrodomésticos</p>
+					<img src="setinha.png" height="32" width=height onclick="togglediv(1)">
 				</div>
 				<div id="Domesticos" hidden=true>
-						<p>Ar-condicionado</p>
-						<p>Chuveiro Elétrico</p>
-						<p>Geladeira</p>
-						<p>Microondas</p>
+						<p>&nbsp Ar-condicionado</p>
+						<p>&nbsp Chuveiro Elétrico</p>
+						<p>&nbsp Geladeira</p>
+						<p>&nbsp Microondas</p>
 				</div>
 				<div class="categoria" name="residuo">
-						<p>Descarte de resíduos</p>
+						<p>&nbsp Descarte de resíduos</p>
 						<img src="" onclick="togglediv(2)">
 				</div>
 				<div class="categoria" name="veiculo">
-					<p>Veículos</p>
+					<p>&nbsp Veículos</p>
 					<img src="" onclick="togglediv(3)">
 				</div>
 			</div>
@@ -57,6 +56,8 @@
 				link template
 			</a>
 		</p>
+
+		<div class="freepik">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>&nbsp</div>
 	</footer>
 
 </html>
