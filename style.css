@@ -11,8 +11,8 @@
 
 .butao {
 	border-radius: 8px;
-	height: 50px;
-	width: 150px;
+	height: 40px;
+	width: 120px;
 	background-color: green;
 	color: white;
 	border: 0px;
@@ -34,25 +34,27 @@
 	justify-content: space-between;
 }
 
-header{
+head {
 	font: bold 20pt Arial;
+	height: 50px;
 }
 
 body {
-	background-image: url(imagem_fundo_01.jpeg);
+	background-image: url(imagens/greenBackground.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	color: black;
 	font: normal 15pt Arial;
 }
 
-.faleConosco {
-	display: flex;
-	flex-direction: row;
-	align-content: center;
-	align-items: center;
+footer {
+    position: absolute;
+    bottom: 1px;
+    width: 99%;
 }
 
-.freepik {
-	text-align: end;
+.rodape {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
