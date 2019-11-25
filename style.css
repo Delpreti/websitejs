@@ -21,6 +21,11 @@
 	border: 0px;
 }
 
+.butao:hover {
+	background-color: white;
+}
+
+
 .arrow {
 	padding-top: 15px;
 	padding-right: 2px;

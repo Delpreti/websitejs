@@ -1,17 +1,21 @@
 //Site em js
 function enableLogin() {
-    let x = document.getElementById("formLogin");
-    x.hidden = false;
     var winx = window.open("login.html", 'pagina',
     "width=350, height=255, top=100, left=110, scrollbars=no " );
 }
 
 function confirmForm() {
     let x = window.alert("Login realizado com sucesso!");
+    window.close();
 }
 
-function recolor() {
-    let u = document.getElementById("botaologin");
+function recolor(butNumber) {
+    let arr2 = [];
+    arr2.push(document.getElementById("botaologin"));
+    arr2.push(document.getElementById("botaocadastro"));
+    arr2.push(document.getElementById("botaoCalc"));
+
+    arr2[butNumber];
 }
 
 function toggle(boolean) {
