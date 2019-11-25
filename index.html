@@ -29,21 +29,38 @@
 			<div class="tableView">
 				<div class="categoria" name="eletro">
 					<p>&nbsp Eletrodomésticos</p>
-					<img src="imagens/setinha.png" height="32" width=height onclick="togglediv(1)">
+					<img class="arrow" src="imagens/setinha.png" height="32" width=height onclick="togglediv(0)">
 				</div>
 				<div id="Domesticos" hidden=true>
-						<p>&nbsp Ar-condicionado</p>
-						<p>&nbsp Chuveiro Elétrico</p>
-						<p>&nbsp Geladeira</p>
+						<div class="container">
+							Ar-condicionado
+							<input type="number" name="quant" placeholder="Quantidade">
+							<input type="number" name="usage" placeholder="Horas">
+							<input type="number" name="btus" placeholder="BTU">
+						</div>
+						<div class="container">
+							Chuveiro Elétrico
+							<input type="number" name="usage" placeholder="Horas">
+						</div>
+						<div class="container">
+							Geladeira
+							<input type="number" name="quant" placeholder="Quantidade">
+						</div>
 						<p>&nbsp Microondas</p>
 				</div>
 				<div class="categoria" name="residuo">
 						<p>&nbsp Descarte de resíduos</p>
-						<img src="" onclick="togglediv(2)">
+						<img class="arrow" src="imagens/setinha.png" height="32" width=height onclick="togglediv(1)">
+				</div>
+				<div id="Residuos" hidden=true>
+					<p>&nbsp Lixo sólido</p>
 				</div>
 				<div class="categoria" name="veiculo">
 					<p>&nbsp Veículos</p>
-					<img src="" onclick="togglediv(3)">
+					<img class="arrow" src="imagens/setinha.png" height="32" width=height onclick="togglediv(2)">
+				</div>
+				<div id="Rodados" hidden=true>
+					<p>&nbsp Kilometros rodados</p>
 				</div>
 			</div>
 		</form>

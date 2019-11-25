@@ -23,8 +23,10 @@ function toggle(boolean) {
 
 function togglediv(number){
     //funciona mas funciona errado
-    let x = document.getElementById("Domesticos");
-    if(number == 1){
-        x.hidden = toggle(x.hidden);
-    }
+    let arr = [];
+    arr.push(document.getElementById("Domesticos"));
+    arr.push(document.getElementById("Residuos"));
+    arr.push(document.getElementById("Rodados"));
+    
+    arr[number].hidden = toggle(arr[number].hidden);
 }
