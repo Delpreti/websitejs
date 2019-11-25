@@ -3,22 +3,23 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Calculadora de CO2</title>
+		<title>CALCULADORA DE CO2</title>
 		<link rel="stylesheet" href="style.css" title="external style sheet">
 		
-		<div class="container">
-			<h1>&nbsp Calculadora de CO2</h1>
 		
-			<div class="login">
-				<button class="butao" type="button" id="botaologin" onmouseover="recolor()" onclick="enableLogin()">Fazer login</button>
-				<button class="butao" type="button" id="botaocadastro" onmouseover="recolor()">Cadastre-se</button>
-				&nbsp;
-			</div>
-		</div>
 	</head>
 
 	<body>
-		<p class="description">Esta ferramenta calcula as emissões em toneladas de CO2</p>
+        <div class="container">
+            <h1>&nbsp CALCULADORA DE CO2</h1>
+    
+            <div class="login">
+                <button class="butao" type="button" id="botaologin" onmouseover="recolor()" onclick="enableLogin()">Fazer login</button>
+                <button class="butao" type="button" id="botaocadastro" onmouseover="recolor()">Cadastre-se</button>
+                &nbsp;
+            </div>
+        </div>
+		<p class="description"><b>ESTA FERRAMENTA CALCULA AS EMISSÕES EM TONELADAS DE CO2</b></p>
 		<a href="https://www.w3schools.com/jsref/dom_obj_event.asp">link util</a>
 		<form name="loginForm" id="formLogin" onsubmit="validateForm()" method="post" hidden=true>
 			<input type="text" name="fname" placeholder="usuário"><br>
@@ -28,8 +29,11 @@
 		<form name="dadosCalculadora" id="principal" onsubmit="sendCO()">
 			<div class="tableView">
 				<div class="categoria" name="eletro">
-					<p>&nbsp Eletrodomésticos</p>
-					<img src="imagens/setinha.png" height="32" width=height onclick="togglediv(1)">
+                    <div>
+                        <img src="imagens/tv.png" height="32" width=height>
+                        <span class="nomelogo">Eletrodomésticos</span>
+                    </div>
+					<img class="imagem" src="imagens/setinha.png" height="32" width=height onclick="togglediv(1)">
 				</div>
 				<div id="Domesticos" hidden=true>
 						<p>&nbsp Ar-condicionado</p>

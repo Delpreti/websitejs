@@ -4,47 +4,61 @@
 	
 	justify-content: space-between;
   	align-items: center;
-
-	background-color: greenyellow;
-	fill-opacity: 50%;
 }
 
 .butao {
-	border-radius: 8px;
+	border-radius: 10px;
 	height: 40px;
 	width: 120px;
-	background-color: green;
+	background-color: rgb(2, 90, 56);
 	color: white;
-	border: 0px;
+    border:2px solid rgb(253, 253, 253);
+    font: normal 10pt Helvetica;
 }
 
 .description {
-	text-align: center;
+    text-align: center;
 }
 
 .tableView {
 	display: flex;
 	flex-direction: column;
-	background-color: darkolivegreen;
+    background-color: rgb(46, 151, 19);
+    border-radius: 10px;
+    border:2px solid rgb(253, 253, 253)
 }
 
 .categoria {
+
+    padding-left: 10px;
+    padding-top: 10px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid rgb(253, 253, 253);
 }
 
+.logo {
+    align-content: left;
+    padding: 10px;
+}
+.nomelogo{
+    align-content: left;
+    padding: 10px;
+    vertical-align: center;
+}
 head {
-	font: bold 20pt Arial;
+	font: bold 20pt Helvetica;
 	height: 50px;
 }
 
 body {
-	background-image: url(imagens/greenBackground.jpg);
+	background-image: url(imagens/ambiente.jpeg);
 	background-size: 100%;
 	background-repeat: no-repeat;
-	color: black;
-	font: normal 15pt Arial;
+	color: rgb(245, 235, 235);
+	font: normal 15pt Helvetica;
 }
 
 footer {
