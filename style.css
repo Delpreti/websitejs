@@ -23,6 +23,7 @@
 
 .butao:hover {
 	background-color: white;
+	color: green;
 }
 
 
@@ -53,8 +54,10 @@ head {
 }
 
 body {
-	background-image: url(imagens/greenBackground.jpg);
-	background-size: auto;
+	background-image: url(imagens/Backgrounds/img3.png);
+	background-position: left;
+	background-position: top;
+	background-size: cover;
 	background-repeat: no-repeat;
 	color: black;
 	font: normal 15pt Arial;

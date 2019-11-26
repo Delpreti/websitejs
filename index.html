@@ -19,12 +19,12 @@
 		</div>
 
 		<p class="description">Calcule sua pegada ecológica aqui!</p>
-		<a href="https://www.w3schools.com/jsref/dom_obj_event.asp">link util</a>
+
 		<form name="dadosCalculadora" id="principal" onsubmit="sendCO()">
 			<div class="tableView">
 				<div class="categoria" name="eletro">
 					<p>&nbsp Eletrodomésticos</p>
-					<img class="arrow" src="imagens/setinha.png" height="32" width=height onclick="togglediv(0)">
+					<img class="arrow" id="seta1" src="imagens/flecha direita FLATICON.png" height="32" width=height onclick="togglediv(0)">
 				</div>
 				<div id="Domesticos" hidden=true>
 						<div class="container">
@@ -47,8 +47,8 @@
 						</div>
 				</div>
 				<div class="categoria" name="residuo">
-						<p>&nbsp Descarte de resíduos</p>
-						<img class="arrow" src="imagens/setinha.png" height="32" width=height onclick="togglediv(1)">
+					<p>&nbsp Descarte de resíduos</p>
+					<img class="arrow" id="seta2" src="imagens/flecha direita FLATICON.png" height="32" width=height onclick="togglediv(1)">
 				</div>
 				<div id="Residuos" hidden=true>
 					<div class="container">
@@ -58,7 +58,7 @@
 				</div>
 				<div class="categoria" name="veiculo">
 					<p>&nbsp Veículos</p>
-					<img class="arrow" src="imagens/setinha.png" height="32" width=height onclick="togglediv(2)">
+					<img class="arrow" id="seta3" src="imagens/flecha direita FLATICON.png" height="32" width=height onclick="togglediv(2)">
 				</div>
 				<div id="Rodados" hidden=true>
 					<div class="container">
