@@ -1,7 +1,7 @@
 //Site em js
 function enableLogin() {
     var winx = window.open("login.html", 'pagina',
-    "width=350, height=255, top=100, left=110, scrollbars=no " );
+    "width=600, height=500, top=100, left=110, scrollbars=no " );
 }
 
 function confirmForm() {
@@ -32,7 +32,6 @@ function togglediv(number){
     arr.push(document.getElementById("Residuos"));
     arr.push(document.getElementById("Rodados"));   
     
-    arr[number].hidden = toggle(arr[number].hidden);
 
 
     let imgarr = [];
@@ -41,11 +40,21 @@ function togglediv(number){
     imgarr.push(document.getElementById("seta3")); 
 
     let angle;
+    let goingDown;
+    let slide;
 
-    if(!arr[number].hidden) {
+    if(arr[number].hidden) {
+        slide = 0;
         angle = 0;
+        goingDown = true;
     } else {
         angle = 90;
+        slide = 1;
+        goingDown = false;
+    }
+
+    if(angle <= 0){
+        arr[number].hidden = toggle(arr[number].hidden);
     }
 
     function spin(bool) {
@@ -53,17 +62,25 @@ function togglediv(number){
         // Incrementa o angulo da seta
         if(bool) {
             angle -= 5;
+            slide -= 0.06;
         } else {
             angle += 5;
+            slide += 0.06;
         }
 
         // Printa a seta rotacionada
-        imgarr[number].setAttribute("style","transform:rotate(" + angle + "deg)");
+        imgarr[number].setAttribute("style","transform:rotate(" + angle + "deg) translateX(" + (angle/10) + "px)");
+        arr[number].setAttribute("style","transform:scaleY(" + slide +")");
 
         // Verifica se pode parar de girar
         if(angle >= 90 || angle <= 0) {
             clearInterval(timer);
         }
+
+        if(angle <= 0){
+            arr[number].hidden = toggle(arr[number].hidden);
+        }
+
     }
 
     var timer = setInterval(spin, 10, arr[number].hidden);
