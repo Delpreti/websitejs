@@ -25,8 +25,6 @@ function toggle(bool) {
     return true;
 }
 
-
-
 function togglediv(number){
     //funciona mas funciona errado
     let arr = [];
@@ -69,5 +67,4 @@ function togglediv(number){
     }
 
     var timer = setInterval(spin, 10, arr[number].hidden);
-    
 }

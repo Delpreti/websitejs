@@ -5,9 +5,6 @@
 	justify-content: space-between;
   	align-items: center;
 
-	background-color: greenyellow;
-	fill-opacity: 50%;
-
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -18,14 +15,14 @@
 	width: 120px;
 	background-color: green;
 	color: white;
-	border: 0px;
+	border: 2px solid rgb(253, 253, 253);
+	font: normal 10pt Helvetica;
 }
 
 .butao:hover {
 	background-color: white;
 	color: green;
 }
-
 
 .arrow {
 	padding-top: 15px;
@@ -39,7 +36,9 @@
 .tableView {
 	display: flex;
 	flex-direction: column;
-	background-color: darkolivegreen;
+	background-color: rgb(46, 151, 19);
+	border-radius: 10px;
+    border: 2px solid rgb(253, 253, 253);
 }
 
 .categoria {
