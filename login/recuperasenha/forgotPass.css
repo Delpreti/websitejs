@@ -1,0 +1,37 @@
+#centralizar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#espacamento {
+	border-radius: 8px;
+	width: 300px;
+	height: 400px;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.data {
+	border-radius: 5px;
+	height: 25px;
+	width: 220px;
+}
+
+.dataButton {
+	border-radius: 8px;
+	height: 40px;
+	width: 120px;
+	background-color: green;
+	color: white;
+	border: 2px solid rgb(253, 253, 253);
+	font: normal 10pt Helvetica;
+}
+
+.dataButton:hover {
+	background-color: white;
+	color: green;
+}

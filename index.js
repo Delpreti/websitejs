@@ -18,40 +18,18 @@ var displayToggle = function(event) {
 
 window.addEventListener('message', displayToggle, false);*/
 
-function enableLogin() {
-    var winx = window.open("login.html", 'pagina',
+// Abre a janela de Login
+function goLogin() {
+    var winx = window.open("login/login.html", 'pagina',
     "width=600, height=450, top=100, left=110, scrollbars=no " );
 }
 
+// Abre a janela de cadastro
 function goCadastro() {
-    window.location.href = "cadastro.html";
+    window.location.href = "cadastro/cadastro.html";
 }
 
-function confirmLogin() {
-    let x = window.alert("Login realizado com sucesso!");
-    window.close();
-    //window.postMessage('logar', 'index.html');
-}
-
-function confirmCadastro() {
-    let x = window.alert("Cadastro realizado com sucesso!");
-    window.location.href = "index.html"
-}
-
-function confirmPassword() {
-    let x = window.alert("Um e-mail de recuperação foi enviado.");
-    window.close();
-}
-
-function recolor(butNumber) {
-    let arr2 = [];
-    arr2.push(document.getElementById("botaologin"));
-    arr2.push(document.getElementById("botaocadastro"));
-    arr2.push(document.getElementById("botaoCalc"));
-
-    arr2[butNumber];
-}
-
+// Funcao pra inverter booleanos
 function toggle(bool) {
     if(bool){
         return false;
@@ -59,6 +37,7 @@ function toggle(bool) {
     return true;
 }
 
+// Funcao que able e fecha as abas da tableview
 function togglediv(number) {
 
     // pega um array com as divs

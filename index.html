@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Calculadora de CO2</title>
-		<link rel="stylesheet" href="style.css" title="external style sheet">
+		<link rel="stylesheet" href="index.css" title="external style sheet">
 	</head>
 
 	<body>
@@ -12,8 +12,8 @@
 			<h1>&nbsp Calculadora de CO2</h1>
 		
 			<div id="mode1" class="login">
-				<button class="butao" type="button" id="botaologin" onmouseover="recolor(0)" onclick="enableLogin()">Fazer login</button>
-				<button class="butao" type="button" id="botaocadastro" onmouseover="recolor(1)" onclick="goCadastro()">Cadastre-se</button>
+				<button class="butao" type="button" id="botaologin" onclick="goLogin()">Fazer login</button>
+				<button class="butao" type="button" id="botaocadastro" onclick="goCadastro()">Cadastre-se</button>
 				&nbsp;
 			</div>
 			<div id="mode2" class="container user">
@@ -78,10 +78,10 @@
 		</form>
 
 		<div id="centralizar">
-			<button class="butao" type="button" id="botaoCalc" onmouseover="recolor(2)" onclick="calculate()">Calcular</button>
+			<button class="butao" type="button" id="botaoCalc" onclick="calculate()">Calcular</button>
 		</div>
 
-		<script src="pagina0.js"></script>
+		<script src="index.js"></script>
 	</body>
 
 	<footer>

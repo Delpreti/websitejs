@@ -4,13 +4,13 @@
     <head>
 		  <meta charset="utf-8">
 		  <title>Realize seu login</title>
-          <link rel="stylesheet" href="loginStyle.css" title="external style sheet">
+          <link rel="stylesheet" href="cadastro.css" title="external style sheet">
     </head>
     <body>
         <div id="centralizar">
             <div id="espacamento">
                 <div id="centralizar">
-                    <h1>Realize seu login</h1>
+                    <h1>Insira seus dados</h1>
                 </div>
                 <form name="loginForm" id="formLogin" onsubmit="validateForm()" method="post">
         			    <div id="centralizar">
@@ -20,14 +20,14 @@
         			        <input class="data" type="password" name="fpass" placeholder=" Senha" required>
                         </div>
                         <div id="centralizar">
-                            <a href="forgotPassword.html">esqueci minha senha</a>
+                            <input class="data" type="password" name="fpass" placeholder=" Confirmar Senha" required>
                         </div><br>
                         <div id="centralizar">
-        			        <input class="dataButton" type="submit" value="Login" onclick="confirmLogin()">
+        			        <input class="dataButton" type="submit" value="Confirmar" onclick="confirmCadastro()">
                         </div><br>
                 </form>
             </div>
         </div>
-        <script src="pagina0.js"></script>
+        <script src="cadastro.js"></script>
     </body>
 </html>
