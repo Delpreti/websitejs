@@ -1,11 +1,45 @@
-//Site em js
+
+/*
+var displayToggle = function(event) {
+    window.alert("Cheguei aqui!");
+    let m = document.getElementById("mode1");
+    let n = document.getElementById("mode2");
+
+    let bool = true;
+
+    if(bool == true){
+        m.style.display = "none";
+        n.setAttribute("style","display:initial");
+    } else {
+        m.setAttribute("style","display:initial");
+        n.setAttribute("style","display:none");  
+    }
+}
+
+window.addEventListener('message', displayToggle, false);*/
+
 function enableLogin() {
     var winx = window.open("login.html", 'pagina',
     "width=600, height=450, top=100, left=110, scrollbars=no " );
 }
 
-function confirmForm() {
+function goCadastro() {
+    window.location.href = "cadastro.html";
+}
+
+function confirmLogin() {
     let x = window.alert("Login realizado com sucesso!");
+    window.close();
+    //window.postMessage('logar', 'index.html');
+}
+
+function confirmCadastro() {
+    let x = window.alert("Cadastro realizado com sucesso!");
+    window.location.href = "index.html"
+}
+
+function confirmPassword() {
+    let x = window.alert("Um e-mail de recuperação foi enviado.");
     window.close();
 }
 

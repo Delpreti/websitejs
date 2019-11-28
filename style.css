@@ -1,3 +1,13 @@
+.profile{
+	margin: 20px;
+	border-radius: 60px;
+	border: 2px solid rgb(0, 0, 0);
+}
+
+.user.container {
+	display: none;
+}
+
 .container {
 	display: flex;
 	flex-direction: row;
@@ -7,6 +17,11 @@
 
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+a.semSublinhado:link {
+	text-decoration: none;
+	text-transform: 
 }
 
 .container2 {
@@ -27,7 +42,7 @@
 	width: 120px;
 	background-color: green;
 	color: white;
-	border: 2px solid rgb(253, 253, 253);
+	border: 1px solid rgb(253, 253, 253);
 	font: normal 10pt Helvetica;
 }
 

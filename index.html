@@ -11,11 +11,16 @@
 		<div class="container">
 			<h1>&nbsp Calculadora de CO2</h1>
 		
-			<div class="login">
+			<div id="mode1" class="login">
 				<button class="butao" type="button" id="botaologin" onmouseover="recolor(0)" onclick="enableLogin()">Fazer login</button>
-				<button class="butao" type="button" id="botaocadastro" onmouseover="recolor(1)">Cadastre-se</button>
+				<button class="butao" type="button" id="botaocadastro" onmouseover="recolor(1)" onclick="goCadastro()">Cadastre-se</button>
 				&nbsp;
 			</div>
+			<div id="mode2" class="container user">
+				olá, Rodrigo
+				<img class="profile" src="imagens/profile1.png" height="60px" width=height>
+			</div>
+
 		</div>
 
 		<p class="description"><b>ESTA FERRAMENTA CALCULA AS EMISSÕES EM TONELADAS DE CO2</b></p>
@@ -82,7 +87,7 @@
 	<footer>
 		<div class="rodape">
 			<div class="faleConosco"> 
-				<a href="quemsomos.html">
+				<a class="semSublinhado" href="quemsomos.html">
 					Quem somos?
 				</a>
 			</div>
