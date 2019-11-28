@@ -14,13 +14,13 @@
                 </div>
                 <form name="loginForm" id="formLogin" onsubmit="validateForm()" method="post">
         			    <div id="centralizar">
-                            <input class="data" type="text" name="fname" placeholder=" Usuário" required>
+                            <input id="username" class="data" type="text" name="fname" placeholder=" Usuário" required>
                         </div><br>
                         <div id="centralizar">
-        			        <input class="data" type="password" name="fpass" placeholder=" Senha" required>
+        			        <input id="pword" class="data" type="password" name="fpass" placeholder=" Senha" required>
                         </div>
                         <div id="centralizar">
-                            <input class="data" type="password" name="fpass" placeholder=" Confirmar Senha" required>
+                            <input id="pwordrepeat" class="data" type="password" name="fpass" placeholder=" Confirmar Senha" required>
                         </div><br>
                         <div id="centralizar">
         			        <input class="dataButton" type="submit" value="Confirmar" onclick="confirmCadastro()">
