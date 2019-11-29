@@ -6,6 +6,35 @@
 
 #mode2 {
 	display: none;
+	cursor: pointer;
+}
+
+.drop {
+	position: relative;
+	display: none;
+	position: absolute;
+	margin-top: 70px;
+	margin-left: 20px;
+	border-radius: 5px;
+	background-color: #f1f1f1;
+	min-width: 150px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.drop a{
+	padding: 15px;
+}
+
+.show {
+	display:flex;
+}
+
+#logout {
+	margin-bottom: 10px;
 }
 
 .container {
@@ -64,8 +93,8 @@ a.semSublinhado:link {
 	align-content: center;
 }
 
-#Domesticos {
-	transform: scaleY(0);
+.esconde {
+	padding: 10px;
 }
 
 .arrow {
@@ -89,6 +118,8 @@ a.semSublinhado:link {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	height: 60px;
+	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
 }
 
 head {

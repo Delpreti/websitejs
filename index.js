@@ -10,12 +10,9 @@ function goLogin() {
     
 }
 
-function receiveMessage(event) {
-
+function logar(bool){
     let m = document.getElementById("mode1");
     let n = document.getElementById("mode2");
-
-    let bool = true;
 
     if(bool == true){
         m.style.display = "none";
@@ -26,6 +23,11 @@ function receiveMessage(event) {
     }
 }
 
+// funcao que altera a pagina quando o usuario realiza seu login
+function receiveMessage(event) {
+    logar(true);
+}
+
 window.addEventListener("message", receiveMessage, false);
 
 // Abre a janela de cadastro
@@ -34,7 +36,7 @@ function goCadastro() {
 }
 
 // Funcao pra inverter booleanos
-function toggle(bool) {
+function tooggle(bool) {
     if(bool){
         return false;
     }
@@ -72,7 +74,7 @@ function togglediv(number) {
 
     // Se a div esta escondida, ela deixa de estar no momento do clique
     if(angle <= 0){
-        arr[number].hidden = toggle(arr[number].hidden);
+        arr[number].hidden = tooggle(arr[number].hidden);
     }
 
     function spin(bool) {
@@ -80,10 +82,10 @@ function togglediv(number) {
         // Incrementa o angulo da seta
         if(!bool) {
             angle -= 5;
-            zoom -= 0.06;
+            zoom -= 0.05;
         } else {
             angle += 5;
-            zoom += 0.06;
+            zoom += 0.05;
         }
 
         // Rotaciona a seta e ajusta um pouco.
@@ -97,11 +99,28 @@ function togglediv(number) {
         }
 
         if(angle <= 0){
-            arr[number].hidden = toggle(arr[number].hidden);
+            arr[number].hidden = tooggle(arr[number].hidden);
         }
 
     }
 
     // Chamamos a funcao spin(bool) a cada 10ms para executar a animacao de abrir e fechar a div
     var timer = setInterval(spin, 10, goingDown);
+}
+
+function dropMenu() {
+    document.getElementById("Dropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.user') && !event.target.matches('.profile')) {
+    var dropdowns = document.getElementsByClassName("drop");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }

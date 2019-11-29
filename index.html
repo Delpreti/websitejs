@@ -16,9 +16,13 @@
 				<button class="butao" type="button" id="botaocadastro" onclick="goCadastro()">Cadastre-se</button>
 				&nbsp;
 			</div>
-			<div id="mode2" class="container user">
+			<div id="mode2" class="container user" onclick="dropMenu()">
 				olá, Rodrigo
 				<img class="profile" src="imagens/profile1.png" height="60px" width=height>
+				<div id="Dropdown" class="drop">
+					<a href="#">Perfil</a>
+					<button class="butao" type="button" id="logout" onclick="logar(false)">Logout</button>
+				</div>
 			</div>
 
 		</div>
@@ -34,7 +38,7 @@
 					</div>
 					<img class="arrow" id="seta1" src="imagens/flecha direita FLATICON.png" height="32" width=height onclick="togglediv(0)">
 				</div>
-				<div id="Domesticos" hidden=true>
+				<div id="Domesticos" class="esconde" hidden=true>
 						<div class="container">
 							Ar-condicionado
 							<input type="number" name="quant" placeholder="Quantidade">
@@ -58,7 +62,7 @@
 					<p>&nbsp Descarte de resíduos</p>
 					<img class="arrow" id="seta2" src="imagens/flecha direita FLATICON.png" height="32" width=height onclick="togglediv(1)">
 				</div>
-				<div id="Residuos" hidden=true>
+				<div id="Residuos" class="esconde" hidden=true>
 					<div class="container">
 						Lixo sólido
 						<input type="number" name="bags" placeholder="Sacos (50L)">
@@ -68,7 +72,7 @@
 					<p>&nbsp Veículos</p>
 					<img class="arrow" id="seta3" src="imagens/flecha direita FLATICON.png" height="32" width=height onclick="togglediv(2)">
 				</div>
-				<div id="Rodados" hidden=true>
+				<div id="Rodados" class="esconde" hidden=true>
 					<div class="container">
 						Kilometros rodados
 						<input type="number" name="kilom" placeholder="Km">
