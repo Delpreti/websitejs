@@ -10,6 +10,6 @@ function confirmCadastro() {
 			return;
 		}
     	window.alert("Cadastro realizado com sucesso!");
-    	window.history.back();
+    	window.location.href = "index.html";
     }
 }

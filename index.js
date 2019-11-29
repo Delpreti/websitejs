@@ -1,7 +1,17 @@
 
-/*
-var displayToggle = function(event) {
-    window.alert("Cheguei aqui!");
+// Abre a janela de Login
+function goLogin() {
+    var winx = window.open("login/login.html", 'pagina',
+    "width=600, height=450, top=100, left=110, scrollbars=no " );
+
+    setTimeout( () => {
+        winx.postMessage("Hello login", "*");
+    }, 1000);
+    
+}
+
+function receiveMessage(event) {
+
     let m = document.getElementById("mode1");
     let n = document.getElementById("mode2");
 
@@ -9,24 +19,18 @@ var displayToggle = function(event) {
 
     if(bool == true){
         m.style.display = "none";
-        n.setAttribute("style","display:initial");
+        n.setAttribute("style","display:flex");
     } else {
-        m.setAttribute("style","display:initial");
+        m.setAttribute("style","display:flex");
         n.setAttribute("style","display:none");  
     }
 }
 
-window.addEventListener('message', displayToggle, false);*/
-
-// Abre a janela de Login
-function goLogin() {
-    var winx = window.open("login/login.html", 'pagina',
-    "width=600, height=450, top=100, left=110, scrollbars=no " );
-}
+window.addEventListener("message", receiveMessage, false);
 
 // Abre a janela de cadastro
 function goCadastro() {
-    window.location.href = "cadastro/cadastro.html";
+    window.location.href = "cadastro.html";
 }
 
 // Funcao pra inverter booleanos
