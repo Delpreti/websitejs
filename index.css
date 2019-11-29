@@ -44,7 +44,7 @@
 	justify-content: space-between;
   	align-items: center;
 
-	padding-left: 10px;
+
 	padding-right: 10px;
 }
 
@@ -106,12 +106,20 @@ a.semSublinhado:link {
 	text-align: center;
 }
 
+#principal {
+	width: 100%;
+	left: 0;
+}
+
+#botaoCalc {
+	margin-top: 20px;
+}
+
 .tableView {
 	display: flex;
 	flex-direction: column;
 	background-color: rgb(46, 151, 19);
-	border-radius: 5px;
-    border: 2px solid rgb(253, 253, 253);
+	width: 100%;
 }
 
 .categoria {
@@ -128,6 +136,9 @@ head {
 }
 
 body {
+	padding: 0;
+	margin: 0;
+	border: 0;
 	background-image: url(imagens/Backgrounds/img3.png);
 	background-position: left;
 	background-position: top;
