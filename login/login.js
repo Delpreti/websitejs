@@ -7,7 +7,7 @@ function confirmLogin() {
     	/*setTimeout( () => {
         	window.opener.postMessage("Hello index", "*");
     	}, 1000);*/
-    	mainPage.postMessage("resposta", "*");
+    	mainPage.postMessage(uName.value, "*");
     	window.close();
     }
     //window.postMessage('logar', 'index.html');

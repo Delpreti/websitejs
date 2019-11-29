@@ -10,13 +10,15 @@ function goLogin() {
     
 }
 
-function logar(bool){
+function logar(bool, usernome){
     let m = document.getElementById("mode1");
     let n = document.getElementById("mode2");
 
     if(bool == true){
+        let u = document.getElementById("ola");
         m.style.display = "none";
         n.setAttribute("style","display:flex");
+        u.innerHTML = "Olá, " + usernome;
     } else {
         m.setAttribute("style","display:flex");
         n.setAttribute("style","display:none");  
@@ -25,7 +27,7 @@ function logar(bool){
 
 // funcao que altera a pagina quando o usuario realiza seu login
 function receiveMessage(event) {
-    logar(true);
+    logar(true, event.data);
 }
 
 window.addEventListener("message", receiveMessage, false);
