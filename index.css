@@ -65,6 +65,11 @@ a.semSublinhado:link {
 	padding-top: 10px;
 }
 
+input {
+	margin: 7px;
+	border-radius: 5px;
+}
+
 .butao {
 	border-radius: 8px;
 	height: 40px;
@@ -73,6 +78,7 @@ a.semSublinhado:link {
 	color: white;
 	border: 1px solid rgb(253, 253, 253);
 	font: normal 10pt Helvetica;
+	margin-left: 5px;
 }
 
 .butao:hover {
@@ -115,6 +121,16 @@ a.semSublinhado:link {
 	margin-top: 20px;
 }
 
+.fillin {
+	display: flex;
+	flex-direction: row;
+	
+	justify-content: space-between;
+  	align-items: center;
+
+	padding-right: 10px;
+}
+
 .tableView {
 	display: flex;
 	flex-direction: column;
@@ -149,7 +165,7 @@ body {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 1px;
     width: 99%;
 }
