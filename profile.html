@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Calculadora de CO2</title>
+		<link rel="stylesheet" href="profile.css" title="external style sheet">
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>&nbsp Calculadora de CO2</h1>
+		
+			<div id="mode1" class="login">
+				<button class="butao" type="button" id="botaologin" onclick="goLogin()">Fazer login</button>
+				<button class="butao" type="button" id="botaocadastro" onclick="goCadastro()">Cadastre-se</button>
+				&nbsp;
+			</div>
+			<div id="mode2" class="container user" onclick="dropMenu()">
+				<div id="ola">Olá, fulano</div>
+				<img class="profile" src="imagens/profile1.png" height="60px" width=height>
+				<div id="Dropdown" class="drop">
+					<a href="#">Perfil</a>
+					<button class="butao" type="button" id="logout" onclick="logar(false, null)">Logout</button>
+				</div>
+			</div>
+
+		</div>
+		<script src="profile.js"></script>
+	</body>
+
+	<footer>
+		<div class="rodape">
+			<div class="faleConosco"> 
+				<a class="semSublinhado" href="quemsomos.html">
+					Quem somos?
+				</a>
+			</div>
+
+			<div class="freepik">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+		</div>
+	</footer>
+
+</html>
