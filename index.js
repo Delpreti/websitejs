@@ -126,3 +126,19 @@ window.onclick = function(event) {
     }
   }
 }
+
+function calculate() {
+    let s = 0.0;
+    let entradas = document.getElementsByTagName('input');
+
+    // Fatores de multiplicacao
+    let fatores = [1, 1, 1, 1, 1, 1, 1, 1, 1];
+
+    // Calculo propriamente dito
+    let i;
+    for(i = 0; i < entradas.length; i++) {
+        s += Number(entradas[i].value, 10)*fatores[i];
+    }
+    let resultLabel = document.getElementById("Result");
+    resultLabel.innerHTML = "Resultado: " + s + " tonCO2";
+}

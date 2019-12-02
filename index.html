@@ -42,7 +42,7 @@
 						<div class="container">
 							Ar-condicionado
 							<div class="fillin">
-								<input type="number" name="quant" placeholder="Quantidade">
+								<input id="AC01" type="number" name="quant" placeholder="Quantidade">
 								<input type="number" name="usage" placeholder="Horas">
 								<input type="number" name="btus" placeholder="BTU">
 							</div>
@@ -93,6 +93,11 @@
 					<div class="container">
 						Kilometros rodados
 						<div class="fillin">
+							<select>
+								<option value="0">Carro</option>
+								<option value="1">Moto</option>
+								<option value="2">Ônibus</option>
+							</select>
 							<input type="number" name="kilom" placeholder="Km">
 						</div>
 					</div>
@@ -106,7 +111,7 @@
 
 		<div id="centralizar" class="esconde">
 			<div id="Result">
-				Resultado: 0tonCO2
+				Resultado: 0 tonCO2
 			</div>
 		</div>
 

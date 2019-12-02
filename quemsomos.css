@@ -97,10 +97,10 @@ head {
 }
 
 body {
-	background-image: url(imagens/Backgrounds/img3.png);
+	background-image: url(imagens/Backgrounds/img4.jpg);
 	background-position: left;
 	background-position: top;
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	color: black;
 	font: normal 15pt Helvetica;
