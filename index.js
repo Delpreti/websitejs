@@ -131,8 +131,13 @@ function calculate() {
     let s = 0.0;
     let entradas = document.getElementsByTagName('input');
 
+    let seletor = document.getElementById('seletor');
+
     // Fatores de multiplicacao
-    let fatores = [1, 1, 1, 1, 1, 1, 1, 1, 1];
+    let fatores = [0.0, 0.354, 0.0, 0.0236, 0.492, 0.413, 0.0, 96.4];
+    let veiculos = [0.237, 0.027];
+
+    fatores.push(veiculos[seletor.selectedIndex]);
 
     // Calculo propriamente dito
     let i;
@@ -140,5 +145,5 @@ function calculate() {
         s += Number(entradas[i].value, 10)*fatores[i];
     }
     let resultLabel = document.getElementById("Result");
-    resultLabel.innerHTML = "Resultado: " + s + " tonCO2";
+    resultLabel.innerHTML = "Resultado: " + s/1000 + " tCO2";
 }
